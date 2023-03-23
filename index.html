@@ -1,1 +1,147 @@
 
+<!doctype html>
+<html lang="en">
+
+<head>
+      <title>Cookie Stand</title>
+      
+      
+</head> 
+
+
+
+<body>
+      <!-- style ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+      <style>
+            body { 
+              display: grid;
+              grid-template-areas: 
+                "header header header"
+                "nav article ads"
+                "nav footer footer";
+              grid-template-rows: 80px 1fr 70px;  
+              grid-template-columns: 20% 1fr 15%;
+              grid-row-gap: 10px;
+              grid-column-gap: 10px;
+              height: 100vh;
+              margin: 0;
+              }  
+            header, footer, article, nav, div {
+              padding: 1.2em;
+              background: whitesmoke;
+              }
+              p {
+                  text-indent: 10%;
+              }
+            #Header {
+              grid-area: header;
+              background-image: url(/images/chinook.jpeg);
+              color: pink;
+              }
+            #Footer {
+              grid-area: footer;
+              }
+            #welcome { 
+              grid-area: article;  
+              align-items: center;
+              }
+            #mainNav { 
+              grid-area: nav; 
+              list-style-type: none;
+              }
+            #locations { 
+              grid-area: ads; 
+              } 
+           
+            @media all and (max-width: 575px) {
+              body { 
+                grid-template-areas: 
+                  "header"
+                  "article"
+                  "ads"
+                  "nav"
+                  "footer";
+                grid-template-rows: 80px 1fr 70px 1fr 70px;  
+                grid-template-columns: 1fr;
+             }
+            }
+            </style>
+
+
+
+<!-- welcome //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+      <header id="Header"><h1>Pat's Salmon Cookies</h1></header>
+      <article id="welcome">
+            <h1> Welcome!</h1>
+      <img src="/images/family.jpeg"/> 
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia sem non bibendum aliquet. 
+            Aenean aliquet lacinia sem quis vulputate. Curabitur at urna sit amet odio congue vehicula quis quis nunc. 
+            Fusce et elit metus. Integer vehicula lectus ac tempor iaculis. Donec porttitor at ex sit amet pellentesque. 
+            Pellentesque non metus euismod, auctor ante at, sodales libero. Donec aliquam mi sit amet faucibus elementum. Donec sodales pretium urna a sollicitudin. Integer convallis feugiat tortor, in volutpat nibh semper eu. Quisque sed luctus libero. Praesent faucibus, lacus tincidunt venenatis hendrerit, urna nisl blandit ante, quis blandit purus odio vitae massa. Fusce vestibulum tellus lorem, placerat vehicula nisl fermentum at.
+
+            Vivamus nec elit quis lacus faucibus hendrerit. Phasellus ultrices est sit amet elit aliquam pretium. 
+            Nulla viverra malesuada neque, ac ultricies velit tincidunt non. Donec lorem augue, porttitor a magna ut, 
+            eleifend auctor sapien. Curabitur finibus dolor nec felis fermentum congue. Sed fermentum lectus vel metus elementum, 
+            non tempor tellus dignissim. Curabitur aliquet aliquam sapien, varius congue metus dictum finibus. Proin tortor ex, 
+            interdum a laoreet at, vestibulum eu dui. In hac habitasse platea dictumst. Curabitur ac feugiat velit, feugiat bibendum leo. 
+            Nulla sed nulla vel orci fermentum mollis. Etiam metus massa, maximus nec nulla sit amet, mollis auctor mi.
+      </p>
+      <img src="/images/salmon.png"/>
+      <h3>Check out our Merch!</h3>
+
+      <img src="images/shirt.jpeg"/> <img src="images/cutter.jpeg"/> <img src="/images/fish.jpeg"/><img src="/images/frosted-cookie.jpeg"/>
+      
+</article>
+<!-- nav sales //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+      <nav id="mainNav">
+            <nav id="mainNav"> 
+                  <a href="/Sales.html">Sales</a> 
+            <p></p>Pat's Salmon Cookies<p></p>
+            1107 E REPUBLICAN ST SEATTLE WA 98102-5133, USA
+            <p></p>(555) 555-5555</p>
+            
+            </nav>
+
+      </nav>
+      <!-- locations////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+      <div id="locations">
+            <div id="locations">
+                  <h1>locations</h1>
+                  <h3>We are closed on sundays!</h3> 
+                
+                  <h2>Seattle</h2>
+                  <p> Mon-Sat: 11:00am - 7:00pm</p>
+                  <p>1107 E REPUBLICAN ST SEATTLE WA 98102-5133 USA</p>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172139.41753808304!2d-122.48248944320022!3d47.612942766481275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490102c93e83355%3A0x102565466944d59a!2sSeattle%2C%20WA!5e0!3m2!1sen!2sus!4v1679538653190!5m2!1sen!2sus" width="260" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <h2>Paris</h2>
+                  <p>Mon-Sat: 11:00am - 7:00pm</p>
+                  <p>41, Rue Fondary. Paris, Île-de-France, 75015</p>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10500.640814113018!2d2.306066522258493!3d48.855155409949546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sen!2sus!4v1679538725009!5m2!1sen!2sus" width="260" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <h2>Tokyo</h2>
+                  <p>Mon-Sat: 11:00am - 7:00pm</p>
+                  <p>光傳寺, Ikebukuro Yahara line, Tokyo. Japan 179-0084 </p>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51843.26493101549!2d139.72409543288742!3d35.69659578919095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ea7e2f93329%3A0x158f36257ff597b1!2sAkihabara%20Station!5e0!3m2!1sen!2sus!4v1679538770211!5m2!1sen!2sus" width="260" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+                  <h2>Dubai</h2>
+                  <p>Mon-Sat: 11:00am - 7:00pm</p>
+                  <p>Al Attar Tower, 99, Sheikh Zayed Road (north). Trade Centre, Dubai. United Arab Emirates</p>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28906.75128609433!2d55.237368485822834!3d25.09021714925937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sus!4v1679538827941!5m2!1sen!2sus" width="260" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <h2>Lima</h2>
+                  <p>Mon-Sat: 11:00am - 7:00pm</p>
+                  <p>AV GREGORIO ESCOBEDO 598, JESUS MARIA, Lima y Callao, Perú</p>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249743.7206050789!2d-77.12820702215336!3d-12.026603229413503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c5f619ee3ec7%3A0x14206cb9cc452e4a!2sLima%2C%20Peru!5e0!3m2!1sen!2sus!4v1679538850859!5m2!1sen!2sus" width="260" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+     
+    
+    </body>
+
+    <!-- footer /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <footer id="Footer">Made by Jeanette L.</footer>
+</html>
+
+
+
+ 
+
+
